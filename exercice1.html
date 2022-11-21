@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Mes exercices</title>
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/exercice1.js"></script>
+        <script>
+            alert('Exécution d\'un code Javascript à l\'intérieur d\'une balise <script>');
+        </script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Mes exercices</a>
+            </div>
+        </nav>
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Exercice 1</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Où écrire mon code Javascript ?</p>
+                </div>
+            </div>
+        </header>
+        <section id="content" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div>
+                        <h2>Exercice 1</h2>
+                        Où écrire mon code Javascript ?<br>
+                        Je peux écrire du Javascript soit dans un fichier <code>.js</code>, soit à l'intérieur d'une balise <code>&lt;script&gt; &lt;/script&gt;</code>.<br>
+                        Pour charger et exécuter le contenu d'un fichier <code>.js</code>, je dois renseigner le chemin du fichier dans une balise <code>&lt;script&gt;</code> via son attribut <code>src</code>.<br>
+                        Exemples:
+                        <pre><code>&lt;script&gt;alert('Hello world');&lt;/script&gt;</code></pre>
+                        <pre><code>&lt;script src="js/exercice1.js"&gt;&lt;/script&gt;</code></pre>
+                        Une balise script peut se placer n'importe où dans une page html.<br>
+                        Attention cependant à toujours garder en tête qu'une page html sera lue par le navigateur de haut en bas !<br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-auto py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Exercices Javascript 2021-2022</p></div>
+        </footer>
+    </body>
+</html>

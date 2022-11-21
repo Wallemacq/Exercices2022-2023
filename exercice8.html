@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Mes exercices</title>
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+        <link href="css/exercice8.css" rel="stylesheet" />
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/exercice8.js"></script>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Mes exercices</a>
+            </div>
+        </nav>
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Exercice 8</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Projet développement web</p>
+                </div>
+            </div>
+        </header>
+        <section id="content" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div>
+                        <h2>Exercice 8</h2>
+                        <div>
+                            But: afficher une image de chat ou de chien en fonction du choix de l'utilisateur.
+                            <br>
+                            L'image doit apparaître en 800ms avec un slide jQuery (slideUp/slideDown) de haut en bas (ne pas utiliser le collapse de bootstrap).
+                            <br>
+                            Si aucun choix, ne rien afficher.
+                            <br>
+                            Particularité: avoir un délai d'une seconde entre le moment où on affiche une image et le moment où on cache une image.
+                            <br>
+                            Si c'est la première fois qu'on affiche une image, ne pas prendre en compte le délai d'une seconde.
+                            <br>
+                            <a href="https://api.jquery.com/slideup/">Doc slideUp</a>
+                            <br>
+                            <a href="https://api.jquery.com/slidedown/">Doc slideDown</a>
+                            <br>
+                            <a href="https://api.jquery.com/delay/">Doc delay</a>
+                        </div>
+                        <br>
+                        <select id="monselect" class="maclasse">
+                            <option value='empty'>Fais ton choix...</option>
+                            <option value='c1'>Team Chat</option>
+                            <option value='c2'>Team Chien</option>
+                        </select>
+                        <br>
+                        <br>
+                        <div id="test"></div>
+                        <div class="choix panel hidden" id="c1">
+                            Moooooonnnn quel beau chat !!!
+                            <img src="https://www.18h39.fr/wp-content/uploads/2019/04/chat-trop-chou-600x420.jpg" alt="Chat">
+                        </div>
+                        <div class="choix panel hidden" id="c2">
+                            Moooooonnnn quel beau chien !!!
+                            <img src="https://i.pinimg.com/originals/03/db/a1/03dba1f979bbb64c5cf5b29b52ef29d7.jpg" alt="Chien">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-auto py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Exercices Javascript 2021-2022</p></div>
+        </footer>
+    </body>
+</html>

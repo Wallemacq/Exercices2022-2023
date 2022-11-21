@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Mes exercices</title>
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/exercice9.js"></script>
+<!--        <script src="js/exercice9light.js.js"></script>-->
+    </head>
+    <body class="d-flex flex-column h-100">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Mes exercices</a>
+            </div>
+        </nav>
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Exercice 9</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Projet développement web</p>
+                </div>
+            </div>
+        </header>
+        <section id="content" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div>
+                        <h2>Exercice 9</h2>
+                            <div>
+                            Formulaire de recherche de musique dans la db Itunes.
+                            <br>
+                            Fonctionnement: L'utilisateur encode un artiste et/ou un titre de musique. A la validation du formulaire, une liste de musique sera affichée en dessous du formulaire avec à chaque fois un échantillon de musique qu'il va pouvoir écouter depuis son navigateur.
+                            <br>
+                            Bonus: rajouter un bouton "Lyrics" qui affichera dans un popup les paroles de la musique souhaitée.
+                            <br>
+                            <a href='https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/'>Doc Webservice Itunes</a>
+                            <br>
+                            <a href='https://lyricsovh.docs.apiary.io/#reference/0/lyrics-of-a-song/search'>Webservice lyrics.ovh</a>
+                            <br>
+                            Exemple d'utilisation du WS Itunes en GET: <a href="https://itunes.apple.com/search?term=indochine&entity=song">https://itunes.apple.com/search?term=indochine&entity=song</a>
+                            <br>
+                            Exemple d'utilisation du WS lyrics.ovh en GET: <a href="https://api.lyrics.ovh/v1/renaud/les%20bobos">https://api.lyrics.ovh/v1/renaud/les%20bobos</a>
+                            <br>
+                            Attention: si vous contactez le WS Itunes en local, il faut utilser "jsonp" comme dataType afin de contourner la sécurité CORS. Explication <a href="http://margaine.com/2014/06/28/jsonp-vs-cors.html">ici</a>
+                            </div>
+                            <br>
+                            <form id="monform">
+                            <!-- Param term qui sera envoyé au ws pour rechercher une musique  -->
+                            <input type="text" name="term">
+                            <!-- Param kind qui sera envoyé au ws pour définir le type de recherche -->
+                            <input type="hidden" name="entity" value="song">
+                            <input type="submit" value="Rechercher">
+                            </form>
+                            <div id="resultat"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-auto py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Exercices Javascript 2021-2022</p></div>
+        </footer>
+    </body>
+</html>
